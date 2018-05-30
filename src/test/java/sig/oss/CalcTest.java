@@ -13,5 +13,13 @@ public class CalcTest{
 		assertEquals(-10, c.sub(10, 20));
 
 	}
+	@Test
+	public void testMultipleInc(){
+		Calc c = new Calc();
+		c.inc(25);
+		c.inc(25);
+		assertEquals(50, c.getResult());
+	}
+
 }
 
